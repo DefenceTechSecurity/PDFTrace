@@ -41,10 +41,6 @@ class Settings:
 
     #: Directory containing Poppler binaries. ``None`` means "search PATH".
     poppler_path: str | None = field(default_factory=lambda: os.environ.get("PDFTRACE_POPPLER_PATH") or None)
-    #: Legacy single custom command (registered as the custom tool ``dbxmetadata``).
-    external_metadata_cmd: str | None = field(
-        default_factory=lambda: os.environ.get("PDFTRACE_DBXMETADATA_CMD") or None
-    )
     #: TOML file with analyst-defined tools (default ``~/.pdftrace/tools.toml``).
     tools_file: str | None = field(default_factory=lambda: os.environ.get("PDFTRACE_TOOLS_FILE") or None)
     #: Toolbox tools run by the pipeline: ``"none"``, ``"all"`` or comma separated ids.

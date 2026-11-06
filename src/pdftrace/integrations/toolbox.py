@@ -299,14 +299,7 @@ def load_custom_tools(settings: Settings) -> tuple[list[ToolSpec], list[str]]:
             entries = list(tomllib.loads(path.read_text("utf-8")).get("tool", []))
         except (OSError, tomllib.TOMLDecodeError) as exc:
             errors.append(f"{path}: {exc}")
-    if settings.external_metadata_cmd:  # backward compatible single-command adapter
-        entries.append(
-            {
-                "id": "dbxmetadata",
-                "name": "dbxMetadata Forensics (custom)",
-                "command": shlex.split(settings.external_metadata_cmd),
-            }
-        )
+ 
     builtin_ids = {t.id for t in BUILTIN_TOOLS}
     for entry in entries:
         command = entry.get("command")
