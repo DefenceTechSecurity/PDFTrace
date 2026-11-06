@@ -37,6 +37,8 @@ Python, le librerie, Poppler, pdfid e pdf-parser sono inclusi.
 
 ## Installazione dai sorgenti
 
+Si consiglia di utilizzare una VM 
+
 ### Requisiti
 
 - Python 3.12 o successivo
@@ -135,6 +137,14 @@ Altri strumenti possono essere aggiunti nel file di configurazione.
   interna (pdfid e qpdf coprono questo caso).
 - Le date numeriche nel testo sono lette come giorno/mese/anno.
 - Le firme digitali vengono rilevate; la validazione è demandata a pdfsig.
+
+## Uso dell'intelligenza artificiale
+
+Alcune parti di PDFTrace sono state sviluppate con il supporto di
+strumenti di AI generativa (Claude di Anthropic), principalmente per la
+struttura del codice e il layout.
+Nessun dato relativo a casi, nessuna evidenza e nessun dato personale di
+terzi è stato condiviso con strumenti di AI per realizzare questo progetto.
 
 ## Licenza
 
