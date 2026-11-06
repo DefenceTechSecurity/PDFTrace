@@ -25,6 +25,13 @@ desktop, in uno strumento a riga di comando e in report esportabili.
 | Toolbox | strumenti open source di terze parti eseguiti sullo stesso file (vedi sotto) |
 | Report | JSON, CSV, Markdown, HTML |
 
+## Ambiente consigliato: macchina virtuale
+
+Lo strumento può essere eseguito direttamente sul proprio sistema, ma si
+consiglia di utilizzarlo all'interno di una macchina virtuale dedicata,
+soprattutto in contesti forensi o quando si elabora materiale di origine
+non verificata.
+
 ## Download e Installazione (Windows)
 
 - `PDFTrace-<versione>-setup.exe`: programma di installazione. Non richiede diritti di amministratore;
@@ -36,8 +43,6 @@ desktop, in uno strumento a riga di comando e in report esportabili.
 Python, le librerie, Poppler, pdfid e pdf-parser sono inclusi. 
 
 ## Installazione dai sorgenti
-
-Si consiglia di utilizzare una VM 
 
 ### Requisiti
 
