@@ -45,9 +45,9 @@ pdftrace = "pdftrace.cli:main"
 pdftrace-gui = "pdftrace.gui.app:main"
 
 [project.urls]
-Homepage = "https://github.com/OWNER/PDFTrace"
-Documentation = "https://github.com/OWNER/PDFTrace#readme"
-Issues = "https://github.com/OWNER/PDFTrace/issues"
+Homepage = "https://github.com/DefenceTechSecurity/PDFTrace"
+Documentation = "https://github.com/DefenceTechSecurity/PDFTrace#readme"
+Issues = "https://github.com/DefenceTechSecurity/PDFTrace/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/pdftrace"]
